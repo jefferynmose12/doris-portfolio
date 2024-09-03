@@ -1,21 +1,9 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../../components/navBar/NavBar";
-import detailImg from "../../assets/detailImg.png";
 import Footer from "../../components/footer/Footer";
-import detailpics1 from "../../assets/detailpics1.png";
-import detailpics2 from "../../assets/detailpics2.png";
-import sketch from "../../assets/sketch.png";
-import figma from "../../assets/figma.png";
-import design from "../../assets/design.png";
 import { useParams } from "react-router-dom";
 import data from "../../assets/data.json";
 import Check from "../../components/check/Check";
-
-const tasks = [
-  "User research revealed that safety, affordability, flexibility, and comfort were top priorities for riders, while drivers emphasised the importance of platform trust and safety.",
-  "User research revealed that safety, affordability, flexibility, and comfort were top priorities for riders, while drivers emphasised the importance of platform trust and safety.",
-  "User research revealed that safety, affordability, flexibility, and comfort were top priorities for riders, while drivers emphasised the importance of platform trust and safety.",
-];
 
 const ProjectsDetails = () => {
   const { id } = useParams();

@@ -30,9 +30,9 @@ const Check = ({ right, data }) => {
         </div>
       </div>
 
-      {data.length && (
+      {data?.length && (
         <div className="mt-10 flex flex-col md:flex-row items-center gap-5 lg:gap-10 justify-between">
-          {data.map(({ preview, id }) => (
+          {data?.map(({ preview, id }) => (
             <div key={id} className="flex-1 w-full ">
               <img
                 src={require(`../../assets/${preview}.png`)}
