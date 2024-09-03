@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "preview": "interacta",
+    "name": "Interacta",
+    "image": "interactaImg",
+    "year": "2024",
+    "service": "Web, UX Design, System Redesign ",
+    "about": "Interacta empowers businesses to streamline their operations by providing a centralized platform to manage and analyze marketing campaigns, monitor sales performance, and engage with customers effectively. With its powerful tools and real-time insights, Interacta helps businesses optimize their workflows, make data-driven decisions, and build stronger customer relationships.",
+    "firstimg": "interactaFirst",
+    "secondimg": "interactaSecond",
+    "desc": "Interacta enhances business efficiency by providing a unified platform for optimizing operations.",
+    "research": "Businesses seek a unified platform that integrates various CRM functionalities to streamline workflows and reduce the need for multiple disparate tools.",
+    "tasks": [
+      "Create user-friendly interfaces for setting up and managing automated workflows, campaign triggers, and follow-up actions to enhance operational efficiency.",
+      "Develop integrated communication tools, such as email templates, chat interfaces, and customer interaction logs, to facilitate seamless engagement with clients.",
+      "Design an intuitive and customizable dashboard that provides users with an overview of key metrics, campaign performance, and sales data in an actionable format."
+    ],
+    "thirdimg": "interactaDesign",
+    "final": [
+      "Comprehensive tool for creating, managing, and tracking marketing campaigns, with features for segmentation, automation, and performance analysis.",
+      "Designed a customizable reports and visualizations, enabling users to analyze data trends, campaign effectiveness, and sales performance.",
+      "Configurable alerts and notifications that keep users informed of important events, deadlines, and performance changes, allowing for timely responses."
+    ],
+    "sub": [
+      "subintaone",
+      "subintatwo",
+      "subintathree",
+      "subintafour",
+      "subintafive",
+      "subintasix",
+      "subintsseven"
+    ],
+    "outcome": "The intuitive design and advanced features, such as real-time analytics, automation workflows, and mobile optimization, enable businesses to make data-driven decisions, improve operational workflows, and strengthen customer relationships"
+  },
+  {
+    "id": 2,
+    "preview": "wecollect"
+  },
+  {
+    "id": 3,
+    "preview": "monay"
+  },
+  {
+    "id": 4,
+    "preview": "gradual"
+  }
+]
