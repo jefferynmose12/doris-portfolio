@@ -21,7 +21,7 @@ const Hero = () => {
         </h2>
       </div>
 
-      <div className="flex items-center gap-2 lg:gap-5 mt-10 mb-8">
+      <div className="flex flex-col md:flex-row items-center gap-2 lg:gap-5 mt-10 mb-8">
         <div className="flex-1">
           <img src={doris2} alt="doris2" className="w-full" />
         </div>
