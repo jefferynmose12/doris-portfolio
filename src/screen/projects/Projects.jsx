@@ -10,12 +10,12 @@ const Projects = () => {
     <div className="">
       <NavBar />
 
-      <div className="px-4 md:px-10 mb-20 md:mb-40">
-        <div className="md:pl-20 lg:px-32 mt-12 md:mt-24 lg:mt-48 text-2xl md:text-5xl font-normal leading-tight font-baskervville text-fade-grey">
+      <div className="px-4 md:px-10 mb-32 md:mb-60">
+        <div className="md:pl-20 lg:px-32 mt-12 md:mt-24 lg:mt-48 text-2xl md:text-5xl font-normal md:leading-tight font-baskervville text-fade-grey">
           <h2>
-            Hi I’m <span className="text-black-text italic">Doris.</span> A
-            design enthusiast with a penchant for turning everyday experiences
-            into extraordinary journeys.
+            Hi I’m <span className="text-black-text italic">Doris.</span> I
+            thrive on blending design with creativity to elevate ordinary
+            moments into unforgettable experiences.
           </h2>
         </div>
 
@@ -30,10 +30,6 @@ const Projects = () => {
             </Link>
           ))}
         </div>
-      </div>
-
-      <div className="px-4 md:px-10 mt-10 mb-10 font-['Baskervville'] text-black-text font-normal">
-        <Check />
       </div>
 
       <Footer />

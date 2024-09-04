@@ -7,10 +7,10 @@ import ProjectsDetails from "./screen/projects/ProjectsDetails";
 function App() {
   return (
     <BrowserRouter>
-      <div className="mx-auto max-w-[1500px]">
+      <div className="mx-auto max-w-[1800px]">
         <Routes>
-          <Route index path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<Home />} />
+          <Route index path="/" element={<Projects />} />
           <Route path="/details/:id" element={<ProjectsDetails />} />
         </Routes>
       </div>

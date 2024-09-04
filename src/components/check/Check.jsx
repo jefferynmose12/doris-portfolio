@@ -20,7 +20,7 @@ const Check = ({ right, data }) => {
             </span>
           ) : (
             <Link
-              to="/projects"
+              to="/"
               className="flex items-center gap-2 lg:gap-3 font-sans cursor-pointer text-sm lg:text-xl font-normal text-[#C76911]"
             >
               <sapn className="">View Projects</sapn>

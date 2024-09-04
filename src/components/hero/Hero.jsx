@@ -3,7 +3,6 @@ import doris1 from "../../assets/doris1.png";
 import doris2 from "../../assets/doris2.png";
 
 const textArr = [
-  "Hi, I'm Doris Nmose,",
   "I'm a creative generalist who loves working with my hands to craft beautiful, problem-solving designs. My approach blends the precision of an architect and the innovation of a product designer into a unique multidisciplinary style.",
   "User experience is at the heart of my design philosophy. I strive to create immersive worlds that draw people in and leave a lasting imprint. Whether designing intricately or finely-tuned digital interfaces, my goal is to elevate design beyond pure function into something emotionally captivating that sparks delight.",
   "Design is a lifelong passion that extends far beyond the workday. You'll find me constantly tinkering on DIY projects, be it in industrial product design, digital interfaces, or any creative endeavour that allows me to merge my skills with a maker's mindset.",
@@ -14,7 +13,7 @@ const textArr = [
 const Hero = () => {
   return (
     <div className="px-4 md:px-10 mb-10">
-      <div className="md:pl-20 lg:pl-32 mt-12 md:mt-24 lg:mt-48 text-2xl md:text-5xl font-normal leading-tight font-baskervville text-fade-grey">
+      <div className="md:pl-20 lg:pl-32 mt-12 md:mt-24 lg:mt-48 text-2xl md:text-5xl font-normal md:leading-tight font-baskervville text-fade-grey">
         <h2>Hi there,</h2>
         <h2>
           I’m <span className="text-black-text italic">Doris,</span>

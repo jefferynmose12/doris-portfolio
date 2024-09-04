@@ -19,7 +19,7 @@ const skills = [
 
 const About = () => {
   return (
-    <div className="px-4 md:px-10 mt-10 mb-10 font-['Baskervville'] text-black-text font-normal">
+    <div className="px-4 md:px-10 mt-10 mb-10 text-black-text font-normal">
       <div className="md:px-0 flex flex-col md:flex-row md:items-center gap-2 lg:gap-5 md:mt-16 mb-8">
         <div className="flex-1">
           <img src={about1} alt="doris2" className="w-full" />
@@ -33,13 +33,13 @@ const About = () => {
       </div>
 
       <div className="mt-5 md:px-20">
-        <h6 className="text-lg md:text-xl pb-3 font-baskervville">
-          For me, design isn't just a profession; it's the heartbeat of every
-          idea, every project, and every adventure.
+        <h6 className="text-lg md:text-xl lg:text-3xl pb-3 w-[90%] font-normal leading-6 md:leading-10 font-baskervville text-fade-grey">
+          Design is more than a craft; it’s the essence that breathes life into
+          concepts, it turn visions into reality.
         </h6>
 
-        <div className="border-t border-light-grey-border pt-7 lg:pt-10 flex flex-col md:flex-row gap-5 md:gap-0 text-medium-grey font-['inter'] lg:text-xl font-normal font-sans">
-          <div className="flex-1 font-semibold">
+        <div className="border-t border-light-grey-border pt-7 lg:pt-10 flex flex-col md:flex-row gap-5 md:gap-0 text-medium-grey text-sm md:text-lg lg:text-xl font-normal font-sans">
+          <div className="flex-1">
             <h6>Skill set</h6>
           </div>
 
@@ -51,8 +51,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-      
       </div>
 
       <Check />

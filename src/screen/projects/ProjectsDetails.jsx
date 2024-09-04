@@ -14,7 +14,7 @@ const ProjectsDetails = () => {
     setProject(findItem);
   }, [id]);
 
-  console.log(project);
+  //console.log(project);
 
   const checkData = Number(id) === 1 ? [data[1], data[2]] : [data[0], data[1]];
 
@@ -49,7 +49,7 @@ const ProjectsDetails = () => {
       );
 
     return (
-      <h2>
+      <h2 className="leading-tight">
         An <span className="text-black-text italic">innovative </span>
         solution that integrates key CRM features into a
         <span className="text-black-text italic"> system platform.</span>
@@ -62,7 +62,7 @@ const ProjectsDetails = () => {
       <NavBar />
 
       <div className="px-4 md:px-10 mb-20">
-        <div className="lg:px-32 w-[95%] md:w-[85%] mt-16 md:mt-20 xl:mt-32 2xl:mt-48 text-2xl md:text-3xl lg:text-5xl font-normal leading-tight font-baskervville text-fade-grey">
+        <div className="lg:px-32 w-[95%] md:w-[85%] mt-16 md:mt-20 xl:mt-32 2xl:mt-48 text-2xl md:text-3xl lg:text-5xl font-normal md:leading-tight font-baskervville text-fade-grey">
           {renderHeder()}
         </div>
 
@@ -79,7 +79,7 @@ const ProjectsDetails = () => {
           <h5 className="text-black-text font-baskervville italic font-normal text-xl md:text-2xl">
             {project?.name}
           </h5>
-          <div className="mt-5 border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-['inter'] md:text-lg lg:text-xl font-normal">
+          <div className="mt-5 border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
               <h6>Year</h6>
             </div>
@@ -89,7 +89,7 @@ const ProjectsDetails = () => {
             </div>
           </div>
 
-          <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-['inter'] md:text-lg lg:text-xl font-normal">
+          <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
               <h6>Service</h6>
             </div>
@@ -99,7 +99,7 @@ const ProjectsDetails = () => {
             </div>
           </div>
 
-          <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-['inter'] md:text-lg lg:text-xl font-normal">
+          <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
               <h6>About Project</h6>
             </div>
@@ -133,7 +133,7 @@ const ProjectsDetails = () => {
           <h5 className="text-black-text font-baskervville italic font-normal text-lg md:text-xl lg:text-2xl">
             {project?.desc}
           </h5>
-          <div className="mt-5 border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-['inter'] md:text-lg lg:text-xl font-normal">
+          <div className="mt-5 border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
               <h6>Research Findings</h6>
             </div>
@@ -143,7 +143,7 @@ const ProjectsDetails = () => {
             </div>
           </div>
 
-          <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-['inter'] md:text-lg lg:text-xl font-normal">
+          <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
               <h6>Tasks</h6>
             </div>
@@ -169,7 +169,7 @@ const ProjectsDetails = () => {
         )}
 
         <div className="lg:px-32">
-          <div className="py-5 flex justify-between text-medium-grey font-['inter']  md:text-lg lg:text-xl font-normal">
+          <div className="py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
               <h6>Proposed Features</h6>
             </div>
@@ -199,7 +199,7 @@ const ProjectsDetails = () => {
         )}
 
         <div className="lg:px-32">
-          <div className="py-5 flex justify-between text-medium-grey font-['inter']  md:text-lg lg:text-xl font-normal">
+          <div className="py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
               <h6>Outcome</h6>
             </div>
