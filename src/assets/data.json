@@ -39,7 +39,36 @@
     "id": 2,
     "preview": "wecollect",
     "name": "WeCollect",
-    "subname": "Data Inventory, Collection Platform"
+    "subname": "Data Inventory, Collection Platform",
+    "image": "wecollectImg",
+    "year": "2022",
+    "service": "Web, UX Design, UI Design, System Redesign",
+    "about": "WeCollect is a conceptual interactive application that allows a field supervisor to collect data from field agents, perform real time monitoring and analytics, geocode areas and inspect, as well as evaluate the data. WeCollect offers a variety of powerful features - offline and online data collection, synchronization of data, playback of tracking activities.",
+    "firstimg": "wecollectFirst",
+    "secondimg": "wecollectSecond",
+    "desc": "WeCollect simplifies field data collection and analysis with real-time monitoring & dynamic visualization",
+    "research": "Users emphasize the need for a reliable and high-performing platform that handles large volumes of data efficiently and without downtime.",
+    "tasks": [
+      "Create wireframes and interactive prototypes to map out the layout and functionality of the platform, testing and refining these designs based on user feedback.",
+      "Develop user-friendly interfaces that facilitate easy data entry, visualization, and analysis, ensuring a seamless experience across desktop and mobile devices.",
+      "Create an interface for real-time data monitoring that provides clear and actionable insights, with features for alerts and notifications."
+    ],
+    "thirdimg": "wecollectDesign1",
+    "fourthimg": "wecollectDesign2",
+    "final": [
+      "Interactive and personalized dashboards that allow users to tailor data visualizations to their specific needs, including widgets for graphs, charts, and key metrics.",
+      "Comprehensive reporting capabilities that allow users to generate detailed, customizable reports with options for filtering, exporting, and sharing findings.",
+      "Advanced visualization tools such as dynamic charts, heatmaps, and graphs that enable users to analyze and interpret data effectively."
+    ],
+    "sub": [
+      "subwecoone",
+      "subwecotwo",
+      "subwecothree",
+      "subwecofour",
+      "subwecofive",
+      "subwecosix"
+    ],
+    "outcome": "Improved data collection processes and real-time monitoring lead to more accurate and reliable data, reducing errors and increasing trust in the platform’s insights."
   },
   {
     "id": 3,
@@ -51,6 +80,35 @@
     "id": 4,
     "preview": "gradual",
     "name": "Gradual",
-    "subname": "Educational, E-learning Platform"
+    "subname": "Educational, E-learning Platform",
+    "image": "gradualImg",
+    "year": "2021",
+    "service": "Web, Mobile, UX Design, Research",
+    "about": "Gradual emphasizes a personalized learning experience, allowing users to set their own pace and track their progress through customized learning paths. With features like peer collaboration, gamification, and instant feedback, Gradual makes learning not just accessible, but also enjoyable and motivating.",
+    "firstimg": "wecollectFirst",
+    "secondimg": "wecollectSecond",
+    "desc": "Gradual empowers learners with a personalized and engaging e-learning experience for continuous growth.",
+    "research": "Learners are more engaged with interactive modules, quizzes, and multimedia content, which help reinforce concepts and make learning more enjoyable.",
+    "tasks": [
+      "Analyze similar e-learning platforms to identify strengths, weaknesses, and opportunities for differentiation, and incorporate best practices into the design.",
+      "Successfully integrated gamification features such as badges, leaderboards, and rewards that enhance user engagement and make learning more enjoyable.",
+      "A dedicated analytics dashboard for educators to monitor student performance, engagement levels, and course effectiveness."
+    ],
+    "thirdimg": "wecollectDesign1",
+    "fourthimg": "wecollectDesign2",
+    "final": [
+      "A user-friendly dashboard that visually displays learners' progress, achievements, and areas needing improvement, motivating them to stay on track.",
+      "Successfully integrated gamification features such as badges, leaderboards, and rewards that enhance user engagement and make learning more enjoyable.",
+      "A dedicated analytics dashboard for educators to monitor student performance, engagement levels, and course effectiveness."
+    ],
+    "sub": [
+      "subwecoone",
+      "subwecotwo",
+      "subwecothree",
+      "subwecofour",
+      "subwecofive",
+      "subwecosix"
+    ],
+    "outcome": "Learners spend more time on the platform due to the interactive course modules, gamification features, and personalized learning paths that keep them motivated and invested in their education."
   }
 ]

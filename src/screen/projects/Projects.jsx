@@ -3,6 +3,7 @@ import NavBar from "../../components/navBar/NavBar";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
 import data from "../../assets/data.json";
+import { FiExternalLink } from "react-icons/fi";
 
 const Projects = () => {
   return (
@@ -37,15 +38,17 @@ const Projects = () => {
                     {subname}
                   </p>
                 </div>
-                <div></div>
+                <div>
+                  <FiExternalLink className="text-2xl" />
+                </div>
               </div>
 
               <div className="absolute w-[80%] md:w-[65%] 2xl:w-[550px] 2xl:h-[650px] bottom-0 right-0 overflow-hidden flex justify-end items-end">
                 <img
-                src={require(`../../assets/${preview}.png`)}
-                alt="preview-img"
-                className="h-[320px] md:h-[400px] 2xl:h-[600px]"
-              />
+                  src={require(`../../assets/${preview}.png`)}
+                  alt="preview-img"
+                  className="h-[320px] md:h-[400px] 2xl:h-[600px]"
+                />
               </div>
             </Link>
           ))}

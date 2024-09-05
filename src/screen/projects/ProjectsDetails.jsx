@@ -16,7 +16,12 @@ const ProjectsDetails = () => {
 
   //console.log(project);
 
-  const checkData = Number(id) === 1 ? [data[1], data[2]] : [data[0], data[1]];
+  const checkData =
+    Number(id) === 1
+      ? [data[1], data[2]]
+      : Number(id) === 2
+      ? [data[2], data[3]]
+      : [data[1], data[0]];
 
   const renderHeder = () => {
     const textId = Number(id);
@@ -24,9 +29,12 @@ const ProjectsDetails = () => {
     if (textId === 2)
       return (
         <h2>
-          An <span className="text-black-text italic">innovative </span>
-          solution that integrates key CRM features into a
-          <span className="text-black-text italic"> system platform.</span>
+          A <span className="text-black-text italic">comprehensive </span>
+          platform that provides intuitive solution for
+          <span className="text-black-text italic">
+            {" "}
+            field data collection.
+          </span>
         </h2>
       );
 
@@ -42,9 +50,10 @@ const ProjectsDetails = () => {
     if (textId === 4)
       return (
         <h2>
-          An <span className="text-black-text italic">innovative </span>
-          solution that integrates key CRM features into a
-          <span className="text-black-text italic"> system platform.</span>
+          An <span className="text-black-text italic">interactive </span> and{" "}
+          <span className="text-black-text italic">accessible </span>e-learning
+          experience that
+          <span className="text-black-text italic"> empowers</span> learners.
         </h2>
       );
 
@@ -56,8 +65,6 @@ const ProjectsDetails = () => {
       </h2>
     );
   };
-
-  //background: linear-gradient(147.85deg, #CDF9D1 0%, #F9D889 47.34%, #F89180 100%);
 
   return (
     <div className="">
