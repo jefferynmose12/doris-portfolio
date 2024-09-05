@@ -57,22 +57,32 @@ const ProjectsDetails = () => {
     );
   };
 
+  //background: linear-gradient(147.85deg, #CDF9D1 0%, #F9D889 47.34%, #F89180 100%);
+
   return (
     <div className="">
       <NavBar />
 
       <div className="px-4 md:px-10 mb-20">
-        <div className="lg:px-32 w-[95%] md:w-[85%] mt-16 md:mt-20 xl:mt-32 2xl:mt-48 text-2xl md:text-3xl lg:text-5xl font-normal md:leading-tight font-baskervville text-fade-grey">
+        <div className="lg:px-32 w-[95%] md:w-[85%] xl:w-[70%] mt-16 md:mt-20 xl:mt-32 2xl:mt-48 text-2xl md:text-3xl xl:text-5xl font-normal md:leading-tight font-baskervville text-fade-grey">
           {renderHeder()}
         </div>
 
         {project && (
           <div className="my-7 md:my-10 lg:my-16 w-full">
-            <img
-              src={require(`../../assets/${project?.image}.png`)}
-              alt="img"
-              className="w-full"
-            />
+            <div
+              style={{
+                backgroundImage:
+                  "linear-gradient(147.85deg, #CDF9D1 0%, #F9D889 47.34%, #F89180 100%)",
+              }}
+              className="flex justify-center items-center p-5 md:p-14 lg:p-24 rounded-xl lg:rounded-[30px]"
+            >
+              <img
+                src={require(`../../assets/${project?.image}.png`)}
+                alt="img"
+                className="w-full"
+              />
+            </div>
           </div>
         )}
         <div className="lg:px-32 my-12 text-fade-grey">
@@ -112,14 +122,26 @@ const ProjectsDetails = () => {
 
         {project && (
           <div className="flex flex-col md:flex-row items-center gap-5 lg:gap-10 justify-between">
-            <div className="flex-1 w-full ">
+            <div
+              style={{
+                backgroundImage:
+                  "linear-gradient(147.85deg, #E9C9E8 0%, #E9A3C6 32.08%, #D271A7 47.34%, #6C3AA5 100%)",
+              }}
+              className="flex-1 w-full p-5 xl:p-10 rounded-xl xl:rounded-[30px]"
+            >
               <img
                 src={require(`../../assets/${project?.firstimg}.png`)}
                 alt="detail"
                 className="w-full"
               />
             </div>
-            <div className="flex-1 w-full">
+            <div
+              style={{
+                backgroundImage:
+                  "linear-gradient(147.85deg, #E9C9E8 0%, #E9A3C6 32.08%, #D271A7 47.34%, #6C3AA5 100%)",
+              }}
+              className="flex-1 w-full p-5 xl:p-10 rounded-xl xl:rounded-[30px]"
+            >
               <img
                 src={require(`../../assets/${project?.secondimg}.png`)}
                 alt="detail"
@@ -159,12 +181,27 @@ const ProjectsDetails = () => {
         </div>
 
         {project && (
-          <div className="my-5 md:my-16 w-full">
-            <img
-              src={require(`../../assets/${project?.thirdimg}.png`)}
-              alt="img-sketch"
-              className="w-full"
-            />
+          <div className="my-5 md:my-16 p-5 md:p-10 lg:p-20 w-full flex flex-col md:flex-row items-center justify-center gap-5 bg-light-pink rounded-xl md:rounded-3xl">
+            <div className="flex flex-col gap-2 md:gap-5">
+              <span className="italic font-baskervville text-lg md:text-2xl">
+                Current Design
+              </span>
+              <img
+                src={require(`../../assets/${project?.thirdimg}.png`)}
+                alt="img-sketch"
+                className="w-full"
+              />
+            </div>
+            <div className="flex flex-col gap-2 md:gap-5">
+              <span className="italic font-baskervville text-xl md:text-2xl">
+                New Design
+              </span>
+              <img
+                src={require(`../../assets/${project?.fourthimg}.png`)}
+                alt="img-sketch"
+                className="w-full"
+              />
+            </div>
           </div>
         )}
 
@@ -187,7 +224,14 @@ const ProjectsDetails = () => {
         {project?.sub.length && (
           <div>
             {project?.sub?.map((img, i) => (
-              <div key={i} className="my-5 md:my-16 w-full">
+              <div
+                style={{
+                  backgroundImage:
+                    "linear-gradient(147.85deg, #D9E5EB 0%, #EDBDE9 47.34%, #B189F1 100%)",
+                }}
+                className="my-5 md:my-16 w-full flex justify-center items-center p-5 md:p-14 lg:p-24 rounded-xl lg:rounded-[30px]"
+                key={i}
+              >
                 <img
                   src={require(`../../assets/${img}.png`)}
                   alt="img-sketch"

@@ -13,6 +13,7 @@ module.exports = {
         "fade-grey": "rgba(136, 136, 136, 1)",
         "medium-grey": "rgba(71, 71, 71, 1)",
         "light-grey-border": "rgba(227, 227, 227, 1)",
+        "light-pink": "#FFE7CA"
       },
     },
   },

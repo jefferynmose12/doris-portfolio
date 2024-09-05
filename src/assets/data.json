@@ -3,6 +3,7 @@
     "id": 1,
     "preview": "interacta",
     "name": "Interacta",
+    "subname": "Customer Relationship Management Platform",
     "image": "interactaImg",
     "year": "2024",
     "service": "Web, UX Design, System Redesign ",
@@ -16,7 +17,8 @@
       "Develop integrated communication tools, such as email templates, chat interfaces, and customer interaction logs, to facilitate seamless engagement with clients.",
       "Design an intuitive and customizable dashboard that provides users with an overview of key metrics, campaign performance, and sales data in an actionable format."
     ],
-    "thirdimg": "interactaDesign",
+    "thirdimg": "interactaDesign1",
+    "fourthimg": "interactaDesign2",
     "final": [
       "Comprehensive tool for creating, managing, and tracking marketing campaigns, with features for segmentation, automation, and performance analysis.",
       "Designed a customizable reports and visualizations, enabling users to analyze data trends, campaign effectiveness, and sales performance.",
@@ -35,14 +37,20 @@
   },
   {
     "id": 2,
-    "preview": "wecollect"
+    "preview": "wecollect",
+    "name": "WeCollect",
+    "subname": "Data Inventory, Collection Platform"
   },
   {
     "id": 3,
-    "preview": "monay"
+    "preview": "monay",
+    "name": "Monay",
+    "subname": "Fintech, Mobile Platform"
   },
   {
     "id": 4,
-    "preview": "gradual"
+    "preview": "gradual",
+    "name": "Gradual",
+    "subname": "Educational, E-learning Platform"
   }
 ]
