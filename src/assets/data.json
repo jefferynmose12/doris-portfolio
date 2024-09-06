@@ -79,8 +79,8 @@
     "year": "2021",
     "service": "Mobile, UX Design, Research",
     "about": "Introducing a new app designed specifically for digital nomads - Monay. This app allows you to manage your finances from anywhere in the world, providing a comprehensive solution for all your financial needs. With the ability to connect to multiple bank accounts and track your expenses in real-time, you can stay on top of your finances no matter where you are.",
-    "firstimg": "wecollectFirst",
-    "secondimg": "wecollectSecond",
+    "firstimg": "monayFirst",
+    "secondimg": "monaySecond",
     "desc": "Monay offers digital nomads a way to manage finances globally, connect multiple accounts in real-time",
     "research": "70% of the users who are digital nomads, complained that they have not found a reliable platform to send and receive money globally while also setting a budget milestones for themselves to manage expenditures for themselves.",
     "tasks": [
@@ -103,11 +103,12 @@
       "Well-designed onboarding experience that includes interactive tutorials and walkthroughs to help new users get up to speed quickly."
     ],
     "sub": [
-      "subgradone",
-      "subgradtwo",
-      "subgradthree",
-      "subgradfour",
-      "subgradfive"
+      "submonone",
+      "submontwo",
+      "submonthree",
+      "submonfour",
+      "submonfive",
+      "submonsix"
     ],
     "outcome": "Learners spend more time on the platform due to the interactive course modules, gamification features, and personalized learning paths that keep them motivated and invested in their education."
   },
@@ -120,8 +121,8 @@
     "year": "2021",
     "service": "Web, Mobile, UX Design, Research",
     "about": "Gradual emphasizes a personalized learning experience, allowing users to set their own pace and track their progress through customized learning paths. With features like peer collaboration, gamification, and instant feedback, Gradual makes learning not just accessible, but also enjoyable and motivating.",
-    "firstimg": "wecollectFirst",
-    "secondimg": "wecollectSecond",
+    "firstimg": "gradualFirst",
+    "secondimg": "gradualSecond",
     "desc": "Gradual empowers learners with a personalized and engaging e-learning experience for continuous growth.",
     "research": "Learners are more engaged with interactive modules, quizzes, and multimedia content, which help reinforce concepts and make learning more enjoyable.",
     "tasks": [

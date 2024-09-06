@@ -141,12 +141,12 @@ const ProjectsDetails = () => {
                 backgroundImage:
                   "linear-gradient(147.85deg, #E9C9E8 0%, #E9A3C6 32.08%, #D271A7 47.34%, #6C3AA5 100%)",
               }}
-              className="flex-1 w-full p-5 xl:p-10 rounded-xl xl:rounded-[30px]"
+              className="flex-1 w-full p-5 xl:p-10 rounded-xl xl:rounded-[30px] flex items-center justify-center"
             >
               <img
                 src={require(`../../assets/${project?.firstimg}.png`)}
                 alt="detail"
-                className="w-full"
+                className=""
               />
             </div>
             <div
@@ -154,12 +154,12 @@ const ProjectsDetails = () => {
                 backgroundImage:
                   "linear-gradient(147.85deg, #E9C9E8 0%, #E9A3C6 32.08%, #D271A7 47.34%, #6C3AA5 100%)",
               }}
-              className="flex-1 w-full p-5 xl:p-10 rounded-xl xl:rounded-[30px]"
+              className="flex-1 w-full p-5 xl:p-10 rounded-xl xl:rounded-[30px] flex items-center justify-center"
             >
               <img
                 src={require(`../../assets/${project?.secondimg}.png`)}
                 alt="detail"
-                className="w-full"
+                className=""
               />
             </div>
           </div>
@@ -231,21 +231,23 @@ const ProjectsDetails = () => {
           </div>
         )}
 
-        <div className="lg:px-32">
-          <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div className="md:flex-1 w-[30%] md:w-auto">
-              <h6>Proposed Features</h6>
-            </div>
+        {project && project?.features && (
+          <div className="lg:px-32">
+            <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
+              <div className="md:flex-1 w-[30%] md:w-auto">
+                <h6>Proposed Features</h6>
+              </div>
 
-            <div className="md:flex-1 w-[65%] md:w-auto">
-              <ul className="list-disc flex flex-col gap-4">
-                {project?.features?.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
+              <div className="md:flex-1 w-[65%] md:w-auto">
+                <ul className="list-disc flex flex-col gap-4">
+                  {project?.features?.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        )}
 
         {project && project?.mobilesec && (
           <div className="md:mt-10 lg:mt-20 w-full">
@@ -289,19 +291,19 @@ const ProjectsDetails = () => {
 
         {project?.sub.length && (
           <div>
-            {project?.sub?.map((img, i) => (
+            {project?.sub.map((img, i) => (
               <div
                 style={{
                   backgroundImage:
                     "linear-gradient(147.85deg, #D9E5EB 0%, #EDBDE9 47.34%, #B189F1 100%)",
                 }}
-                className="my-5 md:my-16 w-full flex justify-center items-center p-5 md:p-14 lg:p-24 rounded-xl lg:rounded-[30px]"
+                className="my-5 md:my-16 flex justify-center items-center p-5 md:p-14 lg:p-24 rounded-xl lg:rounded-[30px]"
                 key={i}
               >
                 <img
                   src={require(`../../assets/${img}.png`)}
-                  alt="img-sketch"
-                  className="w-full"
+                  alt="img"
+                  className=""
                 />
               </div>
             ))}

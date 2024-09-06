@@ -15,18 +15,12 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-1 md:gap-16 items-center">
+        <div className="">
           <Link
             to="http://linkedin.com/in/doris-nmose-7053891aa"
             className="text-black-text hover:text-dark-orange"
           >
             Linkedin
-          </Link>
-          <Link
-            to="https://dribbble.com/Dorispaul_01"
-            className="text-black-text hover:text-dark-orange"
-          >
-            Dribbble
           </Link>
         </div>
       </div>
