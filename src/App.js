@@ -5,6 +5,7 @@ import Projects from "./screen/projects/Projects";
 import ProjectsDetails from "./screen/projects/ProjectsDetails";
 
 function App() {
+
   return (
     <BrowserRouter>
       <div className="mx-auto max-w-[1800px]">

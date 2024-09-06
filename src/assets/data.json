@@ -74,7 +74,42 @@
     "id": 3,
     "preview": "monay",
     "name": "Monay",
-    "subname": "Fintech, Mobile Platform"
+    "subname": "Fintech, Mobile Platform",
+    "image": "monayImg",
+    "year": "2021",
+    "service": "Mobile, UX Design, Research",
+    "about": "Introducing a new app designed specifically for digital nomads - Monay. This app allows you to manage your finances from anywhere in the world, providing a comprehensive solution for all your financial needs. With the ability to connect to multiple bank accounts and track your expenses in real-time, you can stay on top of your finances no matter where you are.",
+    "firstimg": "wecollectFirst",
+    "secondimg": "wecollectSecond",
+    "desc": "Monay offers digital nomads a way to manage finances globally, connect multiple accounts in real-time",
+    "research": "70% of the users who are digital nomads, complained that they have not found a reliable platform to send and receive money globally while also setting a budget milestones for themselves to manage expenditures for themselves.",
+    "tasks": [
+      "Conduct interviews, surveys, and usability tests to understand user needs, pain points, and preferences.",
+      "Revise the structure of information to ensure users can easily find and access what they need.",
+      "Ensure the design is accessible to users with various disabilities, adhering to relevant guidelines and standards.",
+      "Develop interactive prototypes to test design ideas and gather feedback before final implementation."
+    ],
+    "mobilefirst": "mobilefirstmon",
+    "features": [
+      "Integration with multiple accounts for seamless access and management within the app.",
+      "Instant alerts for important updates, such as account changes, new messages, or system status.",
+      "Built-in analytics feature that allows users to monitor system performance, user engagement, and other key metrics."
+    ],
+    "mobilesec": "mobilesecmon",
+    "middle": "midmonImg",
+    "final": [
+      "Visually appealing dashboard that provides users with a quick overview of their most important data and activities.",
+      "Seamless integration of multiple accounts, allowing users to manage various profiles or services from a single platform.",
+      "Well-designed onboarding experience that includes interactive tutorials and walkthroughs to help new users get up to speed quickly."
+    ],
+    "sub": [
+      "subgradone",
+      "subgradtwo",
+      "subgradthree",
+      "subgradfour",
+      "subgradfive"
+    ],
+    "outcome": "Learners spend more time on the platform due to the interactive course modules, gamification features, and personalized learning paths that keep them motivated and invested in their education."
   },
   {
     "id": 4,
@@ -94,20 +129,19 @@
       "Successfully integrated gamification features such as badges, leaderboards, and rewards that enhance user engagement and make learning more enjoyable.",
       "A dedicated analytics dashboard for educators to monitor student performance, engagement levels, and course effectiveness."
     ],
-    "thirdimg": "wecollectDesign1",
-    "fourthimg": "wecollectDesign2",
+    "middle": "midgradImg",
     "final": [
       "A user-friendly dashboard that visually displays learners' progress, achievements, and areas needing improvement, motivating them to stay on track.",
       "Successfully integrated gamification features such as badges, leaderboards, and rewards that enhance user engagement and make learning more enjoyable.",
       "A dedicated analytics dashboard for educators to monitor student performance, engagement levels, and course effectiveness."
     ],
     "sub": [
-      "subwecoone",
-      "subwecotwo",
-      "subwecothree",
-      "subwecofour",
-      "subwecofive",
-      "subwecosix"
+      "subgradone",
+      "subgradtwo",
+      "subgradthree",
+      "subgradfour",
+      "subgradfive",
+      "subgradsix"
     ],
     "outcome": "Learners spend more time on the platform due to the interactive course modules, gamification features, and personalized learning paths that keep them motivated and invested in their education."
   }

@@ -1,9 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { LuMoveRight } from "react-icons/lu";
-import { FiExternalLink } from "react-icons/fi";
 
 const Check = ({ right, data }) => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="border-t border-b border-light-grey-border my-7 lg:my-10 py-5 lg:py-10 ">
       <div className="flex items-center font-baskervville">
@@ -16,7 +22,10 @@ const Check = ({ right, data }) => {
 
         <div className="flex-1 flex justify-end items-end">
           {right ? (
-            <span className="cursor-pointer text-lg font-normal">
+            <span
+              onClick={scrollToTop}
+              className="cursor-pointer text-lg font-normal hover:text-[#C76911]"
+            >
               Back to Top
             </span>
           ) : (
@@ -43,17 +52,14 @@ const Check = ({ right, data }) => {
               className="flex-1 relative h-[450px] md:h-[600px] 2xl:h-[830px] rounded-2xl md:rounded-[30px] overflow-hidden"
               to={`/details/${id}`}
             >
-              <div className="flex justify-between p-5 md:p-10 font-sans">
+              <div className="p-5 md:p-10">
                 <div className="flex flex-col gap-2">
-                  <h6 className="text-lg md:text-2xl font-semibold text-[#0F0F0F]">
+                  <h6 className="font-sans text-lg md:text-2xl font-semibold text-[#0F0F0F]">
                     {name}
                   </h6>
-                  <p className="text-sm md:text-base font-normal text-[#161616]">
+                  <p className="font-sans text-sm md:text-base font-normal text-[#161616]">
                     {subname}
                   </p>
-                </div>
-                <div>
-                  <FiExternalLink className="text-2xl" />
                 </div>
               </div>
 

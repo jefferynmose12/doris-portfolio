@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../../components/navBar/NavBar";
 import Footer from "../../components/footer/Footer";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import data from "../../assets/data.json";
 import Check from "../../components/check/Check";
 
 const ProjectsDetails = () => {
   const { id } = useParams();
+  const { pathname } = useLocation();
   const [project, setProject] = useState(null);
 
   useEffect(() => {
@@ -14,13 +15,17 @@ const ProjectsDetails = () => {
     setProject(findItem);
   }, [id]);
 
-  //console.log(project);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const checkData =
     Number(id) === 1
       ? [data[1], data[2]]
       : Number(id) === 2
       ? [data[2], data[3]]
+      : Number(id) === 3
+      ? [data[0], data[3]]
       : [data[1], data[0]];
 
   const renderHeder = () => {
@@ -28,7 +33,7 @@ const ProjectsDetails = () => {
 
     if (textId === 2)
       return (
-        <h2>
+        <h2 className="leading-tight">
           A <span className="text-black-text italic">comprehensive </span>
           platform that provides intuitive solution for
           <span className="text-black-text italic">
@@ -40,16 +45,17 @@ const ProjectsDetails = () => {
 
     if (textId === 3)
       return (
-        <h2>
-          An <span className="text-black-text italic">innovative </span>
-          solution that integrates key CRM features into a
-          <span className="text-black-text italic"> system platform.</span>
+        <h2 className="leading-tight">
+          A <span className="text-black-text italic">smart app </span>
+          for managing finances and tracking expenses
+          <span className="text-black-text italic"> anywhere </span>in the
+          world.
         </h2>
       );
 
     if (textId === 4)
       return (
-        <h2>
+        <h2 className="leading-tight">
           An <span className="text-black-text italic">interactive </span> and{" "}
           <span className="text-black-text italic">accessible </span>e-learning
           experience that
@@ -87,11 +93,12 @@ const ProjectsDetails = () => {
               <img
                 src={require(`../../assets/${project?.image}.png`)}
                 alt="img"
-                className="w-full"
+                className=""
               />
             </div>
           </div>
         )}
+
         <div className="lg:px-32 my-12 text-fade-grey">
           <h5 className="text-black-text font-baskervville italic font-normal text-xl md:text-2xl">
             {project?.name}
@@ -187,8 +194,8 @@ const ProjectsDetails = () => {
           </div>
         </div>
 
-        {project && (
-          <div className="my-5 md:my-16 p-5 md:p-10 lg:p-20 w-full flex flex-col md:flex-row items-center justify-center gap-5 bg-light-pink rounded-xl md:rounded-3xl">
+        {project && project?.thirdimg && project?.fourthimg && (
+          <div className="md:my-16 p-5 md:p-10 lg:p-20 w-full flex flex-col md:flex-row items-center justify-center gap-5 bg-light-pink rounded-xl md:rounded-3xl">
             <div className="flex flex-col gap-2 md:gap-5">
               <span className="italic font-baskervville text-lg md:text-2xl">
                 Current Design
@@ -212,10 +219,62 @@ const ProjectsDetails = () => {
           </div>
         )}
 
+        {project && project?.mobilefirst && (
+          <div className="my-7 md:my-10 lg:my-16 w-full">
+            <div className="">
+              <img
+                src={require(`../../assets/${project?.mobilefirst}.png`)}
+                alt="img"
+                className="w-full"
+              />
+            </div>
+          </div>
+        )}
+
         <div className="lg:px-32">
-          <div className="py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
+          <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
               <h6>Proposed Features</h6>
+            </div>
+
+            <div className="md:flex-1 w-[65%] md:w-auto">
+              <ul className="list-disc flex flex-col gap-4">
+                {project?.features?.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {project && project?.mobilesec && (
+          <div className="md:mt-10 lg:mt-20 w-full">
+            <div className="">
+              <img
+                src={require(`../../assets/${project?.mobilesec}.png`)}
+                alt="img"
+                className="w-full"
+              />
+            </div>
+          </div>
+        )}
+
+        {project && project?.middle && (
+          <div className="my-7 md:my-10 lg:my-16 w-full">
+            <div className="">
+              <img
+                src={require(`../../assets/${project?.middle}.png`)}
+                alt="img"
+                className="w-full"
+              />
+            </div>
+          </div>
+        )}
+
+        <div className="lg:px-32">
+          <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
+            <div className="md:flex-1 w-[30%] md:w-auto">
+              <h6>Final Designs</h6>
             </div>
 
             <div className="md:flex-1 w-[65%] md:w-auto">
@@ -250,7 +309,7 @@ const ProjectsDetails = () => {
         )}
 
         <div className="lg:px-32">
-          <div className="py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
+          <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
               <h6>Outcome</h6>
             </div>

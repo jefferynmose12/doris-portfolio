@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../../components/navBar/NavBar";
 import Footer from "../../components/footer/Footer";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import data from "../../assets/data.json";
-import { FiExternalLink } from "react-icons/fi";
 
 const Projects = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className="">
       <NavBar />
@@ -29,17 +33,14 @@ const Projects = () => {
               className="flex-1 relative h-[450px] md:h-[600px] 2xl:h-[830px] rounded-2xl md:rounded-[30px] overflow-hidden"
               to={`/details/${id}`}
             >
-              <div className="flex justify-between p-5 md:p-10 font-sans">
+              <div className="p-5 md:p-10">
                 <div className="flex flex-col gap-2">
-                  <h6 className="text-lg md:text-2xl font-semibold text-[#0F0F0F]">
+                  <h6 className="font-sans text-lg md:text-2xl font-semibold text-[#0F0F0F]">
                     {name}
                   </h6>
-                  <p className="text-sm md:text-base font-normal text-[#161616]">
+                  <p className="font-sans text-sm md:text-base font-normal text-[#161616]">
                     {subname}
                   </p>
-                </div>
-                <div>
-                  <FiExternalLink className="text-2xl" />
                 </div>
               </div>
 
