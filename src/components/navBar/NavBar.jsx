@@ -4,7 +4,7 @@ import doris from "../../assets/doris.png";
 
 const NavBar = () => {
   return (
-    <div className="flex items-center justify-between pt-5 md:pt-2 min-h-16 px-4 md:px-10 text-black-text font-sans">
+    <div className="w-full flex items-center justify-between pt-5 md:pt-2 min-h-16 px-4 md:px-10 text-black-text font-sans">
       <Link
         to="/about"
         className="items-center gap-2 font-medium text-lg hidden md:flex"

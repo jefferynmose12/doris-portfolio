@@ -13,7 +13,7 @@ const Home = () => {
   }, [pathname]);
 
   return (
-    <div className="">
+    <div className="w-full overflow-hidden">
       <NavBar />
       <Hero />
       <About />

@@ -73,17 +73,21 @@ const ProjectsDetails = () => {
   };
 
   return (
-    <div className="">
+    <div className="w-full overflow-hidden">
       <NavBar />
 
       <div className="px-4 md:px-10 mb-20">
-        <div className="lg:px-32 w-[95%] md:w-[85%] xl:w-[70%] mt-16 md:mt-20 xl:mt-32 2xl:mt-48 text-2xl md:text-3xl xl:text-5xl font-normal md:leading-tight font-baskervville text-fade-grey">
+        <div
+          data-aos="fade-up"
+          className="lg:px-32 w-[95%] md:w-[85%] xl:w-[70%] mt-16 md:mt-20 xl:mt-32 2xl:mt-48 text-2xl md:text-3xl xl:text-5xl font-normal md:leading-tight font-baskervville text-fade-grey"
+        >
           {renderHeder()}
         </div>
 
         {project && (
           <div className="my-7 md:my-10 lg:my-16 w-full">
             <div
+              data-aos="zoom-in"
               style={{
                 backgroundImage:
                   "linear-gradient(147.85deg, #CDF9D1 0%, #F9D889 47.34%, #F89180 100%)",
@@ -102,35 +106,35 @@ const ProjectsDetails = () => {
         )}
 
         <div className="lg:px-32 mt-8 mb-2 lg:my-12 text-fade-grey">
-          <h5 className="text-black-text font-baskervville italic font-normal text-xl md:text-2xl">
+          <h5 data-aos="fade-right" className="text-black-text font-baskervville italic font-normal text-xl md:text-2xl">
             {project?.name}
           </h5>
           <div className="mt-5 border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div className="md:flex-1 w-[30%] md:w-auto">
+            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
               <h6>Year</h6>
             </div>
 
-            <div className="md:flex-1 w-[65%] md:w-auto">
+            <div data-aos="fade-left" className="md:flex-1 w-[65%] md:w-auto">
               <h6>{project?.year}</h6>
             </div>
           </div>
 
           <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div className="md:flex-1 w-[30%] md:w-auto">
+            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
               <h6>Service</h6>
             </div>
 
-            <div className="md:flex-1 w-[65%] md:w-auto">
+            <div data-aos="fade-left" className="md:flex-1 w-[65%] md:w-auto">
               <h6>{project?.service}</h6>
             </div>
           </div>
 
           <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div className="md:flex-1 w-[30%] md:w-auto">
+            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
               <h6>About Project</h6>
             </div>
 
-            <div className="md:flex-1 w-[65%] md:w-auto text-pretty">
+            <div data-aos="fade-left" className="md:flex-1 w-[65%] md:w-auto text-pretty">
               <h6>{project?.about}</h6>
             </div>
           </div>
@@ -144,6 +148,7 @@ const ProjectsDetails = () => {
                   "linear-gradient(147.85deg, #E9C9E8 0%, #E9A3C6 32.08%, #D271A7 47.34%, #6C3AA5 100%)",
               }}
               className="flex-1 w-full p-5 xl:p-10 rounded-xl xl:rounded-[30px] flex items-center justify-center"
+              data-aos="fade-right"
             >
               <img
                 src={require(`../../assets/${project?.firstimg}.png`)}
@@ -159,6 +164,7 @@ const ProjectsDetails = () => {
                   "linear-gradient(147.85deg, #E9C9E8 0%, #E9A3C6 32.08%, #D271A7 47.34%, #6C3AA5 100%)",
               }}
               className="flex-1 w-full p-5 xl:p-10 rounded-xl xl:rounded-[30px] flex items-center justify-center"
+              data-aos="fade-left"
             >
               <img
                 src={require(`../../assets/${project?.secondimg}.png`)}
@@ -172,26 +178,26 @@ const ProjectsDetails = () => {
         )}
 
         <div className="lg:px-32 mt-5 mb-2 lg:my-12">
-          <h5 className="text-black-text font-baskervville italic font-normal text-lg md:text-xl lg:text-2xl">
+          <h5 data-aos="fade-right" className="text-black-text font-baskervville italic font-normal text-lg md:text-xl lg:text-2xl">
             {project?.desc}
           </h5>
           <div className="mt-5 border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div className="md:flex-1 w-[30%] md:w-auto">
+            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
               <h6>Research Findings</h6>
             </div>
 
-            <div className="md:flex-1 w-[65%] md:w-auto">
+            <div data-aos="fade-left" className="md:flex-1 w-[65%] md:w-auto">
               <h6>{project?.research}</h6>
             </div>
           </div>
 
           <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div className="md:flex-1 w-[30%] md:w-auto">
+            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
               <h6>Tasks</h6>
             </div>
 
             <div className="md:flex-1 w-[65%] md:w-auto">
-              <ul className="list-disc flex flex-col gap-4">
+              <ul data-aos="fade-left" className="list-disc flex flex-col gap-4">
                 {project?.tasks?.map((task, i) => (
                   <li key={i}>{task}</li>
                 ))}
@@ -238,7 +244,7 @@ const ProjectsDetails = () => {
         )}
 
         {project && project?.features && (
-          <div className="lg:px-32">
+          <div className="mb-7 md:mb-0 lg:px-32">
             <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
               <div className="md:flex-1 w-[30%] md:w-auto">
                 <h6>Proposed Features</h6>
@@ -268,7 +274,7 @@ const ProjectsDetails = () => {
         )}
 
         {project && project?.middle && (
-          <div className="my-7 md:my-10 lg:my-16 w-full">
+          <div className="my-4 md:my-10 lg:my-16 w-full">
             <div className="">
               <img
                 src={require(`../../assets/${project?.middle}.png`)}
@@ -279,7 +285,7 @@ const ProjectsDetails = () => {
           </div>
         )}
 
-        <div className="mt-5 lg:px-32">
+        <div className="mt-5 mb-3 lg:px-32">
           <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
               <h6>Final Designs</h6>

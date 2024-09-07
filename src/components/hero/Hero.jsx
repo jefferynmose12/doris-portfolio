@@ -12,7 +12,7 @@ const textArr = [
 
 const Hero = () => {
   return (
-    <div className="px-4 md:px-10 mb-10">
+    <div className="w-full px-4 md:px-10 mb-10">
       <div
         data-aos="fade-up"
         className="md:pl-20 lg:pl-32 mt-12 md:mt-24 lg:mt-48 text-2xl md:text-5xl font-normal md:leading-tight font-baskervville text-fade-grey"
@@ -23,7 +23,7 @@ const Hero = () => {
         </h2>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center gap-2 lg:gap-5 mt-10 mb-8">
+      <div className="flex flex-col md:flex-row items-center gap-2 lg:gap-5 mt-10 mb-8 w-full">
         <div data-aos="fade-right" className="flex-1">
           <img src={doris2} alt="doris2" className="w-full" />
         </div>
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div data-aos="fade-out" className="flex flex-col gap-5 md:gap-7 mt-14 md:px-20 lg:px-32 text-medium-grey text-lg md:text-xl font-normal leading-6 md:leading-7 font-sans">
+      <div data-aos="fade-out" className="flex flex-col gap-5 md:gap-7 mt-8 md:mt-14 md:px-20 lg:px-32 text-medium-grey text-lg md:text-xl font-normal leading-6 md:leading-7 font-sans">
         {textArr.map((text, i) => (
           <h6 key={i}>{text}</h6>
         ))}

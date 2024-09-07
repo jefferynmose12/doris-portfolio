@@ -12,7 +12,7 @@ const Projects = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <div className="">
+    <div className="w-full overflow-hidden">
       <NavBar />
       <div className="px-4 md:px-10 mb-32 md:mb-60">
         <div
