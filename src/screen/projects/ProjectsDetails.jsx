@@ -101,7 +101,7 @@ const ProjectsDetails = () => {
           </div>
         )}
 
-        <div className="lg:px-32 my-12 text-fade-grey">
+        <div className="lg:px-32 mt-8 mb-2 lg:my-12 text-fade-grey">
           <h5 className="text-black-text font-baskervville italic font-normal text-xl md:text-2xl">
             {project?.name}
           </h5>
@@ -171,7 +171,7 @@ const ProjectsDetails = () => {
           </div>
         )}
 
-        <div className="lg:px-32 my-12">
+        <div className="lg:px-32 mt-5 mb-2 lg:my-12">
           <h5 className="text-black-text font-baskervville italic font-normal text-lg md:text-xl lg:text-2xl">
             {project?.desc}
           </h5>
@@ -279,7 +279,7 @@ const ProjectsDetails = () => {
           </div>
         )}
 
-        <div className="lg:px-32">
+        <div className="mt-5 lg:px-32">
           <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
               <h6>Final Designs</h6>
