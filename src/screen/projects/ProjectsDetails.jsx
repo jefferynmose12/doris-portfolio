@@ -93,7 +93,9 @@ const ProjectsDetails = () => {
               <img
                 src={require(`../../assets/${project?.image}.png`)}
                 alt="img"
-                className=""
+                className={`${
+                  project?.adjust ? "w-[35%] lg:w-auto" : "w-auto"
+                }`}
               />
             </div>
           </div>
@@ -146,7 +148,9 @@ const ProjectsDetails = () => {
               <img
                 src={require(`../../assets/${project?.firstimg}.png`)}
                 alt="detail"
-                className=""
+                className={`${
+                  project?.adjust ? "w-[35%] lg:w-auto" : "w-auto"
+                }`}
               />
             </div>
             <div
@@ -159,7 +163,9 @@ const ProjectsDetails = () => {
               <img
                 src={require(`../../assets/${project?.secondimg}.png`)}
                 alt="detail"
-                className=""
+                className={`${
+                  project?.adjust ? "w-[35%] lg:w-auto" : "w-auto"
+                }`}
               />
             </div>
           </div>
@@ -303,7 +309,9 @@ const ProjectsDetails = () => {
                 <img
                   src={require(`../../assets/${img}.png`)}
                   alt="img"
-                  className=""
+                  className={`${
+                    project?.adjust ? "w-[35%] lg:w-auto" : "w-auto"
+                  }`}
                 />
               </div>
             ))}

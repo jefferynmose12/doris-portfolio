@@ -75,6 +75,7 @@
     "preview": "monay",
     "name": "Monay",
     "subname": "Fintech, Mobile Platform",
+    "adjust": true,
     "image": "monayImg",
     "year": "2021",
     "service": "Mobile, UX Design, Research",
