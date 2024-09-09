@@ -53,7 +53,7 @@ const Check = ({ right, data }) => {
               to={`/details/${id}`}
             >
               <div className="p-5 md:p-10">
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-1 lg:gap-2">
                   <h6 className="font-sans text-lg md:text-2xl font-semibold text-[#0F0F0F]">
                     {name}
                   </h6>

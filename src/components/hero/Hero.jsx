@@ -3,11 +3,12 @@ import doris1 from "../../assets/doris1.png";
 import doris2 from "../../assets/doris2.png";
 
 const textArr = [
-  "I'm a creative generalist who loves working with my hands to craft beautiful, problem-solving designs. My approach blends the precision of an architect and the innovation of a product designer into a unique multidisciplinary style.",
-  "User experience is at the heart of my design philosophy. I strive to create immersive worlds that draw people in and leave a lasting imprint. Whether designing intricately or finely-tuned digital interfaces, my goal is to elevate design beyond pure function into something emotionally captivating that sparks delight.",
-  "Design is a lifelong passion that extends far beyond the workday. You'll find me constantly tinkering on DIY projects, be it in industrial product design, digital interfaces, or any creative endeavour that allows me to merge my skills with a maker's mindset.",
-  "I am committed to learning and continuous development. My background and experience helps shape the future of user-centric design. My process involves extensive user research, wire-framing, prototyping, usability testing, and iteration to refine experiences into their most engaging forms.",
-  "For me, design transcends vocation - it is fuelled by passion and storytelling. Whether blueprinting architectural marvels or perfecting pixel-perfect digital experiences, my aim is to emotionally resonate with users through compelling narratives manifested in the experiences I craft.",
+  "I'm a product designer who loves turning complex problems into clean, elegant, user-friendly solutions. My approach blends creativity with strategic thinking - I don't just make things look pretty, I make them work better for people.",
+  "With almost 4 years of experience, I've had the chance to work on everything from mobile apps to enterprise software. I get a kick out of diving deep into user research, sketching out ideas, and collaborating with developers to bring designs to life.",
+  "My portfolio showcases a mix of projects where I've worn different hats - from research and wireframing to prototyping and user testing. I love collaborating with diverse teams and believe that the best products come from a mash-up of different perspectives.",
+  "What really drives me is my hunger to grow. I'm always eager to develop and learn, constantly pushing myself to advance my skills. This field moves fast, and I'm here for it – always ready to dive into new techniques, tools, or approaches that can level up my design game.",
+  "When I'm not designing, you might find me tinkering with new design tools and documenting countries which I’d like to visit. I bring that same curiosity and passion to my work, always looking for fresh perspectives and innovative solutions.",
+  "Let's chat if you're looking for a designer who can think strategically, execute meticulously, and maybe crack a bad joke or two along the way.",
 ];
 
 const Hero = () => {
@@ -33,7 +34,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div data-aos="fade-out" className="flex flex-col gap-5 md:gap-7 mt-8 md:mt-14 md:px-20 lg:px-32 text-medium-grey text-lg md:text-xl font-normal leading-6 md:leading-7 font-sans">
+      <div
+        data-aos="fade-out"
+        className="flex flex-col gap-5 md:gap-7 mt-8 md:mt-14 md:px-20 lg:px-32 text-medium-grey text-lg md:text-xl font-normal leading-6 md:leading-7 font-sans"
+      >
         {textArr.map((text, i) => (
           <h6 key={i}>{text}</h6>
         ))}

@@ -17,7 +17,7 @@ const Projects = () => {
       <div className="px-4 md:px-10 mb-32 md:mb-60">
         <div
           data-aos="fade-up"
-          className="w-[95%] md:w-[85%] lg:w-[95%] 2xl:w-[80%] md:pl-20 lg:px-32 mt-12 md:mt-24 lg:mt-48 text-2xl md:text-5xl font-normal md:leading-tight font-baskervville text-fade-grey"
+          className="w-[95%] md:w-[85%] lg:w-[95%] 2xl:w-[80%] md:pl-20 lg:px-32 mt-20 md:mt-24 lg:mt-48 text-2xl md:text-5xl font-normal md:leading-tight font-baskervville text-fade-grey"
         >
           <h2>
             Hi I’m <span className="text-black-text italic">Doris.</span> I
@@ -39,7 +39,7 @@ const Projects = () => {
               to={`/details/${id}`}
             >
               <div className="p-5 md:p-10">
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-1 md:gap-2">
                   <h6 className="font-sans text-lg md:text-2xl font-semibold text-[#0F0F0F]">
                     {name}
                   </h6>

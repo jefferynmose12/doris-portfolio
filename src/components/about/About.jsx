@@ -35,7 +35,7 @@ const About = () => {
       <div className="mt-5 md:px-20">
         <h6
           data-aos="zoom-in"
-          className="text-lg md:text-xl lg:text-3xl pb-3 w-[90%] font-normal leading-6 md:leading-10 font-baskervville text-fade-grey"
+          className="text-lg md:text-xl lg:text-3xl pb-3 w-[90%] leading-6 md:leading-10 font-baskervville italic text-fade-grey"
         >
           Design is more than a craft; it’s the essence that breathes life into
           concepts, it turn visions into reality.

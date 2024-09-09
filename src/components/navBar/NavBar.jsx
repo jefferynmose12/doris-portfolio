@@ -21,12 +21,22 @@ const NavBar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `flex gap-0 items-center hover:text-dark-sec-color hover:text-dark-orange ${
-              isActive ? "text-dark-orange" : ""
+            `hover:text-dark-sec-color hover:text-dark-orange ${
+              isActive ? "text-dark-orange line-through" : ""
             }`
           }
         >
           Projects
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `hover:text-dark-sec-color hover:text-dark-orange ${
+              isActive ? "text-dark-orange line-through" : ""
+            }`
+          }
+        >
+          About Me
         </NavLink>
         <a
           href="#contact"
