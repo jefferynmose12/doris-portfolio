@@ -105,7 +105,10 @@ const ProjectsDetails = () => {
         )}
 
         <div className="lg:px-32 mt-8 mb-2 lg:my-12 text-fade-grey">
-          <h5 data-aos="fade-right" className="text-black-text font-baskervville italic font-normal text-xl md:text-2xl">
+          <h5
+            data-aos="fade-right"
+            className="text-black-text font-baskervville italic font-normal text-xl md:text-2xl"
+          >
             {project?.name}
           </h5>
           <div className="mt-5 border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
@@ -133,7 +136,10 @@ const ProjectsDetails = () => {
               <h6>About Project</h6>
             </div>
 
-            <div data-aos="fade-left" className="md:flex-1 w-[65%] md:w-auto text-pretty">
+            <div
+              data-aos="fade-left"
+              className="md:flex-1 w-[65%] md:w-auto text-pretty"
+            >
               <h6>{project?.about}</h6>
             </div>
           </div>
@@ -177,12 +183,19 @@ const ProjectsDetails = () => {
         )}
 
         <div className="lg:px-32 mt-5 mb-2 lg:my-12">
-          <h5 data-aos="fade-right" className="text-black-text font-baskervville italic font-normal text-lg md:text-xl lg:text-2xl">
+          <h5
+            data-aos="fade-right"
+            className="text-black-text font-baskervville italic font-normal text-lg md:text-xl lg:text-2xl"
+          >
             {project?.desc}
           </h5>
           <div className="mt-5 border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
-              <h6>Research Findings</h6>
+              <h6>
+                {id === "1"
+                  ? "The Problem (Research Findings)"
+                  : "Research Findings"}
+              </h6>
             </div>
 
             <div data-aos="fade-left" className="md:flex-1 w-[65%] md:w-auto">
@@ -192,11 +205,14 @@ const ProjectsDetails = () => {
 
           <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
-              <h6>Tasks</h6>
+              <h6>{id === "1" ? "My Roles" : "Tasks"}</h6>
             </div>
 
             <div className="md:flex-1 w-[65%] md:w-auto">
-              <ul data-aos="fade-left" className="list-disc flex flex-col gap-4">
+              <ul
+                data-aos="fade-left"
+                className="list-disc flex flex-col gap-3 md:ml-5"
+              >
                 {project?.tasks?.map((task, i) => (
                   <li key={i}>{task}</li>
                 ))}
@@ -250,7 +266,7 @@ const ProjectsDetails = () => {
               </div>
 
               <div className="md:flex-1 w-[65%] md:w-auto">
-                <ul className="list-disc flex flex-col gap-4">
+                <ul className="list-disc flex flex-col gap-3 md:ml-5">
                   {project?.features?.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
@@ -284,6 +300,161 @@ const ProjectsDetails = () => {
           </div>
         )}
 
+        {project?.goal && (
+          <div className="mt-5 mb-3 lg:px-32">
+            <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
+              <div className="md:flex-1 w-[30%] md:w-auto">
+                <h6>The Goal</h6>
+              </div>
+
+              <div className="md:flex-1 w-[65%] md:w-auto">
+                <p>{project?.goal}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {project && project?.goalImg && (
+          <div className="my-4 md:my-10 lg:my-16 w-full">
+            <div className="">
+              <img
+                src={require(`../../assets/${project?.goalImg}.png`)}
+                alt="img"
+                className="w-full"
+              />
+            </div>
+          </div>
+        )}
+
+        {project?.journey && (
+          <div className="mt-5 mb-3 lg:px-32">
+            <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
+              <div className="md:flex-1 w-[30%] md:w-auto">
+                <h6>User Journey</h6>
+              </div>
+
+              <div className="md:flex-1 w-[65%] md:w-auto">
+                <h3>{project.journey}</h3>
+                <ul className="mt-1 list-disc flex flex-col gap-3 md:ml-5">
+                  {project?.journeys?.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {project?.personnal && (
+          <div className="mt-5 mb-3 lg:px-32">
+            <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
+              <div className="md:flex-1 w-[30%] md:w-auto">
+                <h6>User Persona</h6>
+              </div>
+
+              <div className="md:flex-1 w-[65%] md:w-auto">
+                <p>{project?.personnal}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {project && project?.lowFiImg && (
+          <div className="md:my-16 p-5 md:p-10 lg:p-20 w-full grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-5 bg-light-pink rounded-xl md:rounded-3xl">
+            {project?.lowFiImg.map((img) => (
+              <div key={img} className="">
+                <img
+                  src={require(`../../assets/${img}.png`)}
+                  alt={img}
+                  className="w-full h-full"
+                />
+              </div>
+            ))}
+          </div>
+        )}
+
+        {project?.lowFi && (
+          <div className="mt-5 mb-3 lg:px-32">
+            <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
+              <div className="md:flex-1 w-[30%] md:w-auto">
+                <h6>Low-Fi Wireframes</h6>
+              </div>
+
+              <div className="md:flex-1 w-[65%] md:w-auto">
+                <p>{project?.design}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {project && project?.formerImg && (
+          <div className="md:my-16 p-5 md:p-10 lg:p-20 w-full grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-5 bg-light-pink rounded-xl md:rounded-3xl">
+            {project?.formerImg.map((img) => (
+              <div key={img} className="h-[250px]">
+                <img
+                  src={require(`../../assets/${img}.png`)}
+                  alt={img}
+                  className="w-full h-full"
+                />
+              </div>
+            ))}
+          </div>
+        )}
+
+        {project?.former && (
+          <div className="mt-5 mb-3 lg:px-32">
+            <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
+              <div className="md:flex-1 w-[30%] md:w-auto">
+                <h6>former Design</h6>
+              </div>
+
+              <div className="md:flex-1 w-[65%] md:w-auto">
+                <p>{project?.former}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {project && project?.designImg && (
+          <div className="md:my-16 p-5 md:p-10 lg:p-20 w-full grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-5 bg-light-pink rounded-xl md:rounded-3xl">
+            {project?.designImg.map((img) => (
+              <div key={img} className="">
+                <img
+                  src={require(`../../assets/${img}.png`)}
+                  alt={img}
+                  className="w-full h-full"
+                />
+              </div>
+            ))}
+          </div>
+        )}
+
+        {project?.design && (
+          <div className="mt-5 mb-3 lg:px-32">
+            <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
+              <div className="md:flex-1 w-[30%] md:w-auto">
+                <h6>Design System</h6>
+              </div>
+
+              <div className="md:flex-1 w-[65%] md:w-auto">
+                <p>{project?.design}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {project && project?.systemImg && (
+          <div className="my-4 md:my-10 lg:my-16 w-full">
+            <div className="">
+              <img
+                src={require(`../../assets/${project?.systemImg}.png`)}
+                alt="img"
+                className="w-full"
+              />
+            </div>
+          </div>
+        )}
+
         <div className="mt-5 mb-3 lg:px-32">
           <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
             <div className="md:flex-1 w-[30%] md:w-auto">
@@ -291,7 +462,7 @@ const ProjectsDetails = () => {
             </div>
 
             <div className="md:flex-1 w-[65%] md:w-auto">
-              <ul className="list-disc flex flex-col gap-4">
+              <ul className="list-disc flex flex-col gap-3 md:ml-5">
                 {project?.final?.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}

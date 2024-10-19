@@ -7,11 +7,11 @@
     "image": "interactaImg",
     "year": "2024",
     "service": "Web, UX Design, System Redesign ",
-    "about": "Interacta empowers businesses to streamline their operations by providing a centralized platform to manage and analyze marketing campaigns, monitor sales performance, and engage with customers effectively. With its powerful tools and real-time insights, Interacta helps businesses optimize their workflows, make data-driven decisions, and build stronger customer relationships.",
+    "about": "Interacta enables businesses to simplify their operations with an all-in-one platform designed for managing and analyzing marketing campaigns, tracking sales performance, and enhancing customer engagement. By offering powerful tools and real-time insights, it allows companies to streamline their processes, make informed decisions, and foster deeper connections with their customers.",
     "firstimg": "interactaFirst",
     "secondimg": "interactaSecond",
-    "desc": "Interacta enhances business efficiency by providing a unified platform for optimizing operations.",
-    "research": "Businesses seek a unified platform that integrates various CRM functionalities to streamline workflows and reduce the need for multiple disparate tools.",
+    "desc": "Interacta enhances business efficiency by providing a unified platform for optimizing operations ",
+    "research": "Businesses are looking for a single platform that combines all essential CRM functions, simplifying workflows and eliminating the need to juggle multiple separate tools.",
     "tasks": [
       "Create user-friendly interfaces for setting up and managing automated workflows, campaign triggers, and follow-up actions to enhance operational efficiency.",
       "Develop integrated communication tools, such as email templates, chat interfaces, and customer interaction logs, to facilitate seamless engagement with clients.",
@@ -19,6 +19,20 @@
     ],
     "thirdimg": "interactaDesign1",
     "fourthimg": "interactaDesign2",
+    "goal": "The aim was to develop a high-performance, user-friendly website that works smoothly on any device. Key priorities included easy navigation, streamlined content management, improved data visualization, and tailored experiences for CRM businesses.",
+    "goalImg": "goalImg2",
+    "journey": "For a seamless experience, the users should be able to;",
+    "journeys": [
+      "Sign up, integrate third-party apps and go through a brief onboarding tutorial to get familiar with the platform's core features.",
+      "Be directed to the dashboard, where they get a snapshot of their campaigns, orders, automations, and KPIs.",
+      "Create, manage, and edit automated workflows to enhance customer engagement and streamline processes.",
+      "Set up and track campaigns, monitor leads, and analyze performance, while keeping an eye on customer interactions and responses.",
+      "Access detailed insights and performance analytics."
+    ],
+    "lowFiImg": ["lowfiImg1", "lowfiImg2", "lowfiImg3"],
+    "lowFi": "After completing the user journey and analyzing the research findings, I moved on to creating low-fidelity wireframes. This step allowed me to visualize the core layout and structure of the design, focusing on functionality and user flow without the distraction of visual details. The wireframes helped ensure that the design addressed key user needs and pain points identified during research, setting a solid foundation for further iteration.",
+    "design": "Created a comprehensive design system for Interacta, including a style guide (typography, colors, spacing, grid systems), reusable UI component library, standardized design patterns, and usage guidelines/best practices. This system ensured consistency across the website and streamlined workflows.",
+    "designImg": ["design1", "design2", "design3"],
     "final": [
       "Comprehensive tool for creating, managing, and tracking marketing campaigns, with features for segmentation, automation, and performance analysis.",
       "Designed a customizable reports and visualizations, enabling users to analyze data trends, campaign effectiveness, and sales performance.",
@@ -43,7 +57,7 @@
     "image": "wecollectImg",
     "year": "2022",
     "service": "Web, UX Design, UI Design, System Redesign",
-    "about": "WeCollect is a conceptual interactive application that allows a field supervisor to collect data from field agents, perform real time monitoring and analytics, geocode areas and inspect, as well as evaluate the data. WeCollect offers a variety of powerful features - offline and online data collection, synchronization of data, playback of tracking activities.",
+    "about": "WeCollect is an interactive app designed to help field supervisors gather data from agents, monitor activities in real time, perform analytics, and inspect areas. It includes a range of features such as offline and online data collection, data synchronization, and playback of tracking activities, making it a versatile tool for data evaluation and field operations.",
     "firstimg": "wecollectFirst",
     "secondimg": "wecollectSecond",
     "desc": "WeCollect simplifies field data collection and analysis with real-time monitoring & dynamic visualization",
@@ -55,6 +69,20 @@
     ],
     "thirdimg": "wecollectDesign1",
     "fourthimg": "wecollectDesign2",
+    "goal": "Enhance user experience by simplifying navigation and interactions, ensuring that field supervisors can efficiently collect and manage data. Improving data visualization for better insight analysis, optimizing offline capabilities for reliable use in diverse conditions, and enabling customization to meet individual user needs.",
+    "goalImg": "goalImg",
+    "personnal": "Creating a user persona provided valuable insights that guided my design process. By understanding John’s pain points and needs, I could prioritize features that would address his challenges effectively. This persona also helped me to empathize with the end user, ensuring that the solutions I designed were not only functional but also user-friendly, ultimately leading to a more effective product that meets the specific needs of field supervisors like John.",
+    "formerImg": [
+      "former1",
+      "former2",
+      "former3",
+      "former4",
+      "former5",
+      "former6"
+    ],
+    "former": "The former design of the application suffered from significant accessibility and navigation issues, making it challenging for users to engage effectively. It lacked essential features such as keyboard navigation, confusing layout, unclear labelling  and proper color contrast. ",
+    "design": "After completing the user persona and research phases, I focused on curating a design system that includes reusable components to ensure consistency and efficiency in the design process.",
+    "systemImg": "systemImg",
     "final": [
       "Interactive and personalized dashboards that allow users to tailor data visualizations to their specific needs, including widgets for graphs, charts, and key metrics.",
       "Comprehensive reporting capabilities that allow users to generate detailed, customizable reports with options for filtering, exporting, and sharing findings.",
@@ -98,6 +126,16 @@
     ],
     "mobilesec": "mobilesecmon",
     "middle": "midmonImg",
+    "userFlow": "For effective split bills and payments, users should be able to;",
+    "userFlows": [
+      "Track expenses or bills - categories bills (users will like to know what they spent and who owes what).",
+      "Send reminders in-app or via SMS as opposed to sending via email. Can this feature also be automated.",
+      "Ability to settle bills in the app that way settling up is automated and not input manually.",
+      "Are bill splitting available for only users within the same app?",
+      "In-app notifications to let users know when they are in a group, how much they owe and who owes what.",
+      "Ability to incorporate split expenses in personal expenses report.",
+      "Payment splits can be made in various divisors or fractions or percentiles."
+    ],
     "final": [
       "Visually appealing dashboard that provides users with a quick overview of their most important data and activities.",
       "Seamless integration of multiple accounts, allowing users to manage various profiles or services from a single platform.",
@@ -132,6 +170,16 @@
       "A dedicated analytics dashboard for educators to monitor student performance, engagement levels, and course effectiveness."
     ],
     "middle": "midgradImg",
+    "userFlow": "For effective split bills and payments, users should be able to;",
+    "userFlows": [
+      "Track expenses or bills - categories bills (users will like to know what they spent and who owes what).",
+      "Send reminders in-app or via SMS as opposed to sending via email. Can this feature also be automated.",
+      "Ability to settle bills in the app that way settling up is automated and not input manually.",
+      "Are bill splitting available for only users within the same app?",
+      "In-app notifications to let users know when they are in a group, how much they owe and who owes what.",
+      "Ability to incorporate split expenses in personal expenses report.",
+      "Payment splits can be made in various divisors or fractions or percentiles."
+    ],
     "final": [
       "A user-friendly dashboard that visually displays learners' progress, achievements, and areas needing improvement, motivating them to stay on track.",
       "Successfully integrated gamification features such as badges, leaderboards, and rewards that enhance user engagement and make learning more enjoyable.",
