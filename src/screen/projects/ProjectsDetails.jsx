@@ -390,7 +390,7 @@ const ProjectsDetails = () => {
         {project && project?.formerImg && (
           <div className="md:my-16 p-5 md:p-10 lg:p-20 w-full grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-5 bg-light-pink rounded-xl md:rounded-3xl">
             {project?.formerImg.map((img) => (
-              <div key={img} className="h-[250px]">
+              <div key={img} className="">
                 <img
                   src={require(`../../assets/${img}.png`)}
                   alt={img}
@@ -405,7 +405,7 @@ const ProjectsDetails = () => {
           <div className="mt-5 mb-3 lg:px-32">
             <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
               <div className="md:flex-1 w-[30%] md:w-auto">
-                <h6>former Design</h6>
+                <h6>Former Design</h6>
               </div>
 
               <div className="md:flex-1 w-[65%] md:w-auto">
