@@ -107,12 +107,12 @@ const ProjectsDetails = () => {
         <div className="lg:px-32 mt-8 mb-2 lg:my-12 text-fade-grey">
           <h5
             data-aos="fade-right"
-            className="text-black-text font-baskervville italic font-normal text-xl md:text-2xl"
+            className="text-black-text font-baskervville italic font-normal text-2xl md:text-3xl"
           >
             {project?.name}
           </h5>
           <div className="mt-5 border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
+            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto font-semibold">
               <h6>Year</h6>
             </div>
 
@@ -122,7 +122,7 @@ const ProjectsDetails = () => {
           </div>
 
           <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
+            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto font-semibold">
               <h6>Service</h6>
             </div>
 
@@ -132,7 +132,7 @@ const ProjectsDetails = () => {
           </div>
 
           <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
+            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto font-semibold">
               <h6>About Project</h6>
             </div>
 
@@ -190,7 +190,7 @@ const ProjectsDetails = () => {
             {project?.desc}
           </h5>
           <div className="mt-5 border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
+            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto font-semibold">
               <h6>
                 {id === "1"
                   ? "The Problem (Research Findings)"
@@ -204,8 +204,8 @@ const ProjectsDetails = () => {
           </div>
 
           <div className="border-t border-light-grey-border py-5 md:py-8 lg:py-10 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto">
-              <h6>{id === "1" ? "My Roles" : "Tasks"}</h6>
+            <div data-aos="fade-right" className="md:flex-1 w-[30%] md:w-auto font-semibold">
+              <h6>{id === "1" ? "My Role" : "Tasks"}</h6>
             </div>
 
             <div className="md:flex-1 w-[65%] md:w-auto">
@@ -261,7 +261,7 @@ const ProjectsDetails = () => {
         {project && project?.features && (
           <div className="mb-7 md:mb-0 lg:px-32">
             <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-              <div className="md:flex-1 w-[30%] md:w-auto">
+              <div className="md:flex-1 w-[30%] md:w-auto font-semibold">
                 <h6>Proposed Features</h6>
               </div>
 
@@ -303,7 +303,7 @@ const ProjectsDetails = () => {
         {project?.goal && (
           <div className="mt-5 mb-3 lg:px-32">
             <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-              <div className="md:flex-1 w-[30%] md:w-auto">
+              <div className="md:flex-1 w-[30%] md:w-auto font-semibold">
                 <h6>The Goal</h6>
               </div>
 
@@ -329,7 +329,7 @@ const ProjectsDetails = () => {
         {project?.journey && (
           <div className="mt-5 mb-3 lg:px-32">
             <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-              <div className="md:flex-1 w-[30%] md:w-auto">
+              <div className="md:flex-1 w-[30%] md:w-auto font-semibold">
                 <h6>User Journey</h6>
               </div>
 
@@ -348,7 +348,7 @@ const ProjectsDetails = () => {
         {project?.personnal && (
           <div className="mt-5 mb-3 lg:px-32">
             <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-              <div className="md:flex-1 w-[30%] md:w-auto">
+              <div className="md:flex-1 w-[30%] md:w-auto font-semibold">
                 <h6>User Persona</h6>
               </div>
 
@@ -376,8 +376,22 @@ const ProjectsDetails = () => {
         {project?.lowFi && (
           <div className="mt-5 mb-3 lg:px-32">
             <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-              <div className="md:flex-1 w-[30%] md:w-auto">
+              <div className="md:flex-1 w-[30%] md:w-auto font-semibold">
                 <h6>Low-Fi Wireframes</h6>
+              </div>
+
+              <div className="md:flex-1 w-[65%] md:w-auto">
+                <p>{project?.lowFi}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {project?.design && (
+          <div className="mt-3 mb-3 lg:px-32">
+            <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
+              <div className="md:flex-1 w-[30%] md:w-auto font-semibold">
+                <h6>Design System</h6>
               </div>
 
               <div className="md:flex-1 w-[65%] md:w-auto">
@@ -404,7 +418,7 @@ const ProjectsDetails = () => {
         {project?.former && (
           <div className="mt-5 mb-3 lg:px-32">
             <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-              <div className="md:flex-1 w-[30%] md:w-auto">
+              <div className="md:flex-1 w-[30%] md:w-auto font-semibold">
                 <h6>Former Design</h6>
               </div>
 
@@ -429,20 +443,6 @@ const ProjectsDetails = () => {
           </div>
         )}
 
-        {project?.design && (
-          <div className="mt-5 mb-3 lg:px-32">
-            <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-              <div className="md:flex-1 w-[30%] md:w-auto">
-                <h6>Design System</h6>
-              </div>
-
-              <div className="md:flex-1 w-[65%] md:w-auto">
-                <p>{project?.design}</p>
-              </div>
-            </div>
-          </div>
-        )}
-
         {project && project?.systemImg && (
           <div className="my-4 md:my-10 lg:my-16 w-full">
             <div className="">
@@ -456,8 +456,8 @@ const ProjectsDetails = () => {
         )}
 
         <div className="mt-5 mb-3 lg:px-32">
-          <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div className="md:flex-1 w-[30%] md:w-auto">
+          <div className="lg:py-5 flex justify-between text-medium-grey gap-5 md:gap-0 font-sans md:text-lg lg:text-xl font-normal">
+            <div className="md:flex-1 w-[30%] md:w-auto font-semibold">
               <h6>Final Designs</h6>
             </div>
 
@@ -496,7 +496,7 @@ const ProjectsDetails = () => {
 
         <div className="lg:px-32">
           <div className="lg:py-5 flex justify-between text-medium-grey font-sans md:text-lg lg:text-xl font-normal">
-            <div className="md:flex-1 w-[30%] md:w-auto">
+            <div className="md:flex-1 w-[30%] md:w-auto font-semibold">
               <h6>Outcome</h6>
             </div>
 
