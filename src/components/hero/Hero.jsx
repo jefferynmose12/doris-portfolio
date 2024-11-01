@@ -4,7 +4,7 @@ import doris2 from "../../assets/doris2.png";
 
 const textArr = [
   "I'm a product designer who loves turning complex problems into clean, elegant, user-friendly solutions. My approach blends creativity with strategic thinking - I don't just make things look pretty, I make them work better for people.",
-  "With almost 4 years of experience, I've had the chance to work on everything from mobile apps to enterprise software. I get a kick out of diving deep into user research, sketching out ideas, and collaborating with developers to bring designs to life.",
+  "With 4+ years of experience, I've had the chance to work on everything from mobile apps to enterprise software. I get a kick out of diving deep into user research, sketching out ideas, and collaborating with developers to bring designs to life.",
   "My portfolio showcases a mix of projects where I've worn different hats - from research and wireframing to prototyping and user testing. I love collaborating with diverse teams and believe that the best products come from a mash-up of different perspectives.",
   "What really drives me is my hunger to grow. I'm always eager to develop and learn, constantly pushing myself to advance my skills. This field moves fast, and I'm here for it – always ready to dive into new techniques, tools, or approaches that can level up my design game.",
   "When I'm not designing, you might find me tinkering with new design tools and documenting countries which I’d like to visit. I bring that same curiosity and passion to my work, always looking for fresh perspectives and innovative solutions.",
