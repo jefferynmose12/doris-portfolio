@@ -401,9 +401,21 @@ const ProjectsDetails = () => {
           </div>
         )}
 
-        {project && project?.formerImg && (
+        {project && project?.systemImg && (
+          <div className="my-4 md:my-10 lg:my-16 w-full">
+            <div className="">
+              <img
+                src={require(`../../assets/${project?.systemImg}.png`)}
+                alt="img"
+                className="w-full"
+              />
+            </div>
+          </div>
+        )}
+
+        {project && project?.designImg && (
           <div className="md:my-16 p-5 md:p-10 lg:p-20 w-full grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-5 bg-light-pink rounded-xl md:rounded-3xl">
-            {project?.formerImg.map((img) => (
+            {project?.designImg.map((img) => (
               <div key={img} className="">
                 <img
                   src={require(`../../assets/${img}.png`)}
@@ -429,9 +441,9 @@ const ProjectsDetails = () => {
           </div>
         )}
 
-        {project && project?.designImg && (
+        {project && project?.formerImg && (
           <div className="md:my-16 p-5 md:p-10 lg:p-20 w-full grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-5 bg-light-pink rounded-xl md:rounded-3xl">
-            {project?.designImg.map((img) => (
+            {project?.formerImg.map((img) => (
               <div key={img} className="">
                 <img
                   src={require(`../../assets/${img}.png`)}
@@ -443,17 +455,7 @@ const ProjectsDetails = () => {
           </div>
         )}
 
-        {project && project?.systemImg && (
-          <div className="my-4 md:my-10 lg:my-16 w-full">
-            <div className="">
-              <img
-                src={require(`../../assets/${project?.systemImg}.png`)}
-                alt="img"
-                className="w-full"
-              />
-            </div>
-          </div>
-        )}
+        
 
         <div className="mt-5 mb-3 lg:px-32">
           <div className="lg:py-5 flex justify-between text-medium-grey gap-5 md:gap-0 font-sans md:text-lg lg:text-xl font-normal">
